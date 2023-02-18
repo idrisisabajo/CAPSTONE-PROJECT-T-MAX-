@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: content-box;
+}
+
+body{
+    background: #cedee9;
+    color: rgb(80, 78, 78);
+}
+
+a{
+    text-decoration: none;
+    color: #5f5f5f;
+    list-style: none;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+
+}
+.logo img{
+    width: 50px;
+    margin-right: 15px;
+    display: block;
+}
+.navbar-center ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar-center ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.navbar-center ul li a img{
+    width: 25px;
+    padding-right: 0.7rem;
+}
+.navbar-center ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -20px;
+    transition: width 0.3s;
+}
+.navbar-center ul li a:hover::after,
+.navbar-center ul li a.active-link::after
+
+{
+    width: 100%;
+}
+.nav-profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background: #41db51;
+    position: absolute;
+
+}
+.search-box{
+    background: #f0f2f5;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+.search-box img{
+    width: 14px;
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+/*----------NAVIGATION ENDS HERE----------*/
+
+
+.market-body{
+    background-color:#bbd8ec ;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -4rem;
+    gap: 1.5rem;
+  }
+.market-page{
+    background: gray;
+    color: black;
+    flex-basis: 27%;
+    align-self: flex-start;
+    position: sticky;
+    top: 15%;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.market-page a{
+    display: flex;
+}
+
+.market-span{
+    align-items: center;
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+}
+ .markets{
+    display: flex;
+    justify-content: space-between;
+ }
+ .market-page .market-search{
+    background: #ccc;
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.1rem;
+    margin: 1rem 0;
+    align-items: center;
+ }
+
+ .market-page .market-search input{
+    border: 0;
+    outline: none;
+    background: transparent;
+ }
+
+ .market-page .active{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 3rem;
+    transition: all 300ms ease;
+    text-decoration: none;
+    color: #000;
+ }
+
+ .market-page .menu-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 3rem;
+    transition: all 300ms ease;
+    text-decoration: none;
+    color: #000;
+ }
+
+ .market-page .menu-item span i{
+    color: rgb(156, 3, 3);
+    margin-right: 1rem;
+    font-size: 1.35rem;
+ }
+
+ .market-page .active span i{
+    color: rgb(156, 3, 3);
+    margin-right: 1rem;
+    font-size: 1.35rem;
+ }
+
+
+ .btn{
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 12px;
+    background-color: rgb(156, 3, 3);
+    color: #fff;
+    border: 0;
+    margin-top: 1rem;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+
+  /*-------MARKET  ITEMS START HERE -----------*/
+ .market-items{
+    flex-basis: 70%;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 2rem;
+ }
+
+ .market-items .items-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+ }
+
+ .items-box{
+    display: grid;
+    column-gap: 10px;
+    /* grid-template-columns: repeat(auto-fit, minmax(270px,1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+ }
+
+ .items img{
+   border-radius: 10px;
+ }
+
+ .items img:hover{
+    transform: scale(1.1);
+    transition: all 1.2s;
+    border: 1px solid green;
+ }
+
+ .items h3 p{
+    color: #fff;
+ }
+
+.market-page .menu-item{
+    color: #242323e8;
+}
+
+.market-page .menu-item .active{
+    color: #242323e8;
+}
+
+.market-page .active h3{
+    font-size: 0.99rem;
+    color: #0e0c0c;
+}
+
+.market-page .menu-item h3{
+    font-size: 0.99rem;
+    color: #0e0c0c;
+}
+
+.market-page .active:hover{
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.market-page .menu-item:hover{
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.market-h1{
+    color: #000;
+    font-size: 0.85rem;
+}
+.market-search i{
+    color: #000;
+    padding-left: 0.3rem;
+}
+
+.market-span i{
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.market-search input{
+    width: 100%;
+    background: red;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+
+.market-page{
+    padding: 1rem;
+    background-color: #777575be;
+    color: #fff;
+}
